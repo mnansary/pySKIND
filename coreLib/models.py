@@ -14,7 +14,7 @@ from tensorflow.keras.utils import plot_model
 
 import os
 #--------------------------------------------------------------------------------------
-def conv_net(img_dim=64,nb_channels=1):
+def conv_net(img_dim=64,nb_channels=3):
     img_shape=(img_dim,img_dim,nb_channels)
     # layer specs
     filters=[64,128,256,512]
@@ -43,7 +43,7 @@ class DenseNet(object):
     """
     def __init__(
         self,image_dim=64,
-        nb_channels=1,
+        nb_channels=3,
         nb_classes=2,
         nb_dense=3,
         nb_layers=12,

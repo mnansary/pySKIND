@@ -118,6 +118,10 @@ As compared to well established CNN models (like : *FractNet* or *ResNet*) Dense
     *   Better Handling Of the *vanishing gradient* problem      
 
 
+* Model Structre
+ 
+![](/info/Dense_default.png?raw=true)
+
 # Testing
 * run **score.py**
 
