@@ -88,15 +88,11 @@
 # Training
 
 ### MODEL: CONV_NET
-* in **convNet.ipynb** : SECTION: *Conv_net Model Training* SUB-SECTION: **Data**, change the values of the following params as needed:
+* in **convNet.ipynb** : SECTION: *ConvNet Model Training* SUB-SECTION: **Data**, change the values of the following params as needed:
 
- ![](/info/colab_convNet.png?raw=true)
+![](/info/colab_convNet.png?raw=true)
 
-* Model Structre
- 
-![](/info/convNet.png?raw=true)
-
-
+* [Model Structre](https://github.com/mnansary/pySKIND/blob/master/info/convNet.png)
 > * run **convNet.ipynb** in *colab*
 > * 250 epochs:
 
@@ -118,9 +114,7 @@ As compared to well established CNN models (like : *FractNet* or *ResNet*) Dense
     *   Better Handling Of the *vanishing gradient* problem      
 
 
-* Model Structre
- 
-![](/info/Dense_default.png?raw=true)
+* [Default Model Structre](https://github.com/mnansary/pySKIND/blob/master/info/DenseNet.png)
 
 # Testing
 * run **score.py**
