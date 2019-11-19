@@ -1,6 +1,6 @@
 # pyCONVCLASSIFIER
 
-    Version: 0.0.1    
+    Version: 0.0.2    
     Author : Md. Nazmuddoha Ansary
                   
 ![](/info/src_img/python.ico?raw=true )
@@ -93,11 +93,11 @@
 ![](/info/colab_convNet.png?raw=true)
 
 * [Model Structre](https://github.com/mnansary/pySKIND/blob/master/info/convNet.png)
-> * run **convNet.ipynb** in *colab*
-> * 250 epochs:
+* run **convNet.ipynb** in *colab*
 
-> ![](/info/convNet_history.png?raw=true)
+![](/info/convNet_history.png?raw=true)
 
+* **F1 SCORE:98.05703541209651 %** (100 epochs) 
 
 ### MODEL: DenseNet
 The model is based on the original paper:[Densely Connected Convolutional Networks](https://ieeexplore.ieee.org/document/8099726)  
@@ -115,6 +115,12 @@ As compared to well established CNN models (like : *FractNet* or *ResNet*) Dense
 
 
 * [Default Model Structre](https://github.com/mnansary/pySKIND/blob/master/info/DenseNet.png)
+
+* run **denseNet.ipynb** in *colab*
+* In addition to the previous parameters like **convNet**, the following valuese *may be changed* for *exploring*.
+
+![](/info/colab_denseNet.png?raw=true)
+
 
 # Testing
 * run **score.py**
