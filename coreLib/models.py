@@ -212,10 +212,11 @@ class DenseNet(object):
 #--------------------------------------------------------------------------------------
 if __name__=='__main__':
     img_path='/home/ansary/RESEARCH/MEDICAL/pySKIND/info/'
-    
+    '''
     model=conv_net()
     model.summary()
     plot_model(model,to_file=os.path.join(img_path,'convNet.png'),show_layer_names=True,show_shapes=True)
+    '''
     OBJ=DenseNet()
     model=OBJ.get_model()
     model.summary()
