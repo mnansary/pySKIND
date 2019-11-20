@@ -45,7 +45,7 @@ class DenseNet(object):
         nb_layers=12,
         nb_filter=12, 
         growth_rate=12, 
-        weight_decay=1e-4,
+        weight_decay=None,
         dropout_rate=None,
         bottleneck=False,
         compression=0.5):

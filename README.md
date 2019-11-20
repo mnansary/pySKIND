@@ -1,6 +1,6 @@
 # pyCONVCLASSIFIER
 
-    Version: 0.0.4    
+    Version: 0.0.5    
     Author : Md. Nazmuddoha Ansary
                   
 ![](/info/src_img/python.ico?raw=true )
@@ -111,8 +111,12 @@ As compared to well established CNN models (like : *FractNet* or *ResNet*) Dense
 
 * [Default Model Structre](https://github.com/mnansary/pySKIND/blob/master/info/DenseNet.png)
 
-* run **denseNet.ipynb** in *colab*
 * In addition to the previous parameters like **convNet**, the following valuese *may be changed* for *exploring*.
 
 ![](/info/colab_denseNet.png?raw=true)
 
+* run **denseNet.ipynb** in *colab*
+
+![](/info/denseNet_history.png?raw=true)
+
+* F1 SCORE: **99.1390306122449 %** 
