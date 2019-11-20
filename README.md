@@ -1,6 +1,6 @@
 # pyCONVCLASSIFIER
 
-    Version: 0.0.3    
+    Version: 0.0.4    
     Author : Md. Nazmuddoha Ansary
                   
 ![](/info/src_img/python.ico?raw=true )
@@ -83,7 +83,7 @@
 
 # Training
 
-### MODEL: CONV_NET
+## MODEL: CONV_NET
 * in **convNet.ipynb** : SECTION: *ConvNet Model Training* SUB-SECTION: **Data**, change the values of the following params as needed:
 
 ![](/info/colab_convNet.png?raw=true)
@@ -91,10 +91,10 @@
 * [Model Structre](https://github.com/mnansary/pySKIND/blob/master/info/convNet.png)
 * run **convNet.ipynb** in *colab*
 
->![](/info/convNet_history.png?raw=true)
+![](/info/convNet_history.png?raw=true)
 
-
-### MODEL: DenseNet
+* F1 SCORE: **98.4375 %** 
+## MODEL: DenseNet
 The model is based on the original paper:[Densely Connected Convolutional Networks](https://ieeexplore.ieee.org/document/8099726)  
 > Authors and Researchers: Gao Huang ; Zhuang Liu ; Laurens van der Maaten ; Kilian Q. Weinberger
 
