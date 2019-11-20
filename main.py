@@ -53,11 +53,15 @@ def create_split(DS,FLAGS):
     # batch data
     train_len=get_batched_len(FLAGS.BATCH_SIZE,X_train.shape[0])
     eval_len =get_batched_len(FLAGS.BATCH_SIZE,X_eval.shape[0])
+    test_len =get_batched_len(FLAGS.BATCH_SIZE,X_test.shape[0])
     # finalize data
     X_train=X_train[:train_len]
     Y_train=Y_train[:train_len]
     X_eval =X_eval[:eval_len]
     Y_eval =Y_eval[:eval_len]
+    X_test =X_test[:test_len]
+    Y_test =Y_test[:test_len]
+    
     # save data
     # test
     saveh5(X_TEST_PATH,X_test)
@@ -83,6 +87,7 @@ def create_tfrecords(DS,FLAGS):
     total_data_len=len(images_path_list)
     test_len=int(FLAGS.TEST_SPLIT*total_data_len)
     test_image_path_list=images_path_list[:test_len]
+    test_image_path_list=test_image_path_list[:get_batched_len(FLAGS.BATCH_SIZE,len(test_image_path_list))]
     images_path_list=images_path_list[test_len:]
     # eval and train split
     total_data_len=len(images_path_list)
@@ -106,7 +111,7 @@ def main(FLAGS):
     LOG_INFO('Creating Dataset')
     DS=create_dataset(FLAGS)
     create_split(DS,FLAGS)
-    create_tfrecords(DS,FLAGS)
+    #create_tfrecords(DS,FLAGS)
     LOG_INFO('Time Taken:{} s'.format(time.time()-start_time),p_color='yellow')
     
     

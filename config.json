@@ -7,8 +7,8 @@
         "IMAGE_DIM"       : 64,
         "ROT_ANGLES"      : "5,10,15,20,30,45,60,75",
         "EVAL_SPLIT"      : 0.05,
-        "TEST_SPLIT"      : 0.1,
-        "BATCH_SIZE"      : 1024
+        "TEST_SPLIT"      : 0.2,
+        "BATCH_SIZE"      : 128
     }
     
 } 

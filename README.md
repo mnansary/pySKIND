@@ -1,6 +1,6 @@
 # pyCONVCLASSIFIER
 
-    Version: 0.0.2    
+    Version: 0.0.3    
     Author : Md. Nazmuddoha Ansary
                   
 ![](/info/src_img/python.ico?raw=true )
@@ -27,8 +27,8 @@
                 "IMAGE_DIM"       : 64,
                 "ROT_ANGLES"      : "5,10,15,20,30,45,60,75",
                 "EVAL_SPLIT"      : 0.05,
-                "TEST_SPLIT"      : 0.1,
-                "BATCH_SIZE"      : 1024
+                "TEST_SPLIT"      : 0.2,
+                "BATCH_SIZE"      : 128
             }
             
         } 
@@ -55,10 +55,6 @@
         ├── Test
         │   ├── X_test.h5
         │   └── Y_test.h5
-        ├── TFRECORD
-        │   ├── Eval.tfrecord
-        │   ├── Test.tfrecord
-        │   └── Train.tfrecord
         └── Train
             ├── X_eval.h5
             ├── X_train.h5
@@ -66,9 +62,9 @@
             └── Y_train.h5
 
 
-*    Train Data Size:**26624** images
-*    Test Data Size: **3191** images
-*    Eval Data Size: **1024** images
+*    Train Data Size:**24192** images
+*    Test Data Size: **6272** images
+*    Eval Data Size: **1152** images
 
 
 **ENVIRONMENT**  
@@ -95,9 +91,8 @@
 * [Model Structre](https://github.com/mnansary/pySKIND/blob/master/info/convNet.png)
 * run **convNet.ipynb** in *colab*
 
-![](/info/convNet_history.png?raw=true)
+>![](/info/convNet_history.png?raw=true)
 
-* **F1 SCORE:98.05703541209651 %** (100 epochs) 
 
 ### MODEL: DenseNet
 The model is based on the original paper:[Densely Connected Convolutional Networks](https://ieeexplore.ieee.org/document/8099726)  
@@ -120,23 +115,4 @@ As compared to well established CNN models (like : *FractNet* or *ResNet*) Dense
 * In addition to the previous parameters like **convNet**, the following valuese *may be changed* for *exploring*.
 
 ![](/info/colab_denseNet.png?raw=true)
-
-
-# Testing
-* run **score.py**
-
-
-            usage: score.py [-h] model_name model_dir x_test y_test
-
-            F1 Score of models
-
-            positional arguments:
-            model_name  name of the model to be scored. Available: convNet
-            model_dir   model weights directory
-            x_test      feature data path(h5)
-            y_test      label data path(h5)
-
-            optional arguments:
-            -h, --help  show this help message and exit
-
 

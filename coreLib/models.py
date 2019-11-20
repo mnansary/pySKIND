@@ -37,10 +37,6 @@ def conv_net(img_dim=64,nb_channels=3):
     return model
 #--------------------------------------------------------------------------------------
 class DenseNet(object):
-    """
-        Fast Implementation of DenseNet based on: https://github.com/Lasagne/Recipes/blob/master/papers/densenet/densenet_fast.py
-        Heavily Borrowed From: https://github.com/titu1994/DenseNet/blob/master/densenet_fast.py
-    """
     def __init__(
         self,image_dim=64,
         nb_channels=3,
@@ -195,7 +191,7 @@ class DenseNet(object):
                 kernel_regularizer=self.regularizer,
                 bias_regularizer =self.regularizer,
                 name="CLASS_DENSE")(X)
-        
+        '''
         # naming
         
         self.model_name="DenseNet_blocks:{}_layers:{}_filters:{}_growth:{}_weightDecay:{}_dropout:{}_compression:{}_bottleneck:{}".format(self.nb_dense,
@@ -207,6 +203,7 @@ class DenseNet(object):
                                                                                                  self.compression,
                                                                                                  self.bottleneck
                                                                                                 )
+        '''
         model=Model(inputs=self.IN,outputs=X,name='DenseNet')
         return model
 #--------------------------------------------------------------------------------------
@@ -220,5 +217,5 @@ if __name__=='__main__':
     OBJ=DenseNet()
     model=OBJ.get_model()
     model.summary()
-    plot_model(model,to_file=os.path.join(img_path,"{}.png".format(OBJ.model_name)),show_layer_names=True,show_shapes=True)
+    plot_model(model,to_file=os.path.join(img_path,"denseNet.png"),show_layer_names=True,show_shapes=True)
     
