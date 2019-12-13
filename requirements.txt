@@ -1,4 +1,5 @@
 absl-py==0.8.1
+appJar==0.94.0
 astor==0.8.0
 astroid==2.3.2
 cycler==0.10.0

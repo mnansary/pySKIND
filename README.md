@@ -120,3 +120,11 @@ As compared to well established CNN models (like : *FractNet* or *ResNet*) Dense
 ![](/info/denseNet_history.png?raw=true)
 
 * F1 SCORE: **99.1390306122449 %** 
+
+# Deployment
+
+* run **app.py**
+* used model: **DenseNet**
+* After Training in **colab**,download the weights from **google drive** and place them in  **models** folder in the local copy of the repo
+
+![](/info/ui.gif?raw=true)
