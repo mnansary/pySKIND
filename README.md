@@ -1,7 +1,7 @@
 # pyCONVCLASSIFIER
 
     Version: 0.0.5    
-    Author : Md. Nazmuddoha Ansary
+    Author : Md. Nazmuddoha Ansary, Shakir Hossain
                   
 ![](/info/src_img/python.ico?raw=true )
 ![](/info/src_img/tensorflow.ico?raw=true)
