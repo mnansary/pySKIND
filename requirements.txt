@@ -21,7 +21,7 @@ matplotlib==3.1.1
 mccabe==0.6.1
 mock==3.0.5
 networkx==2.4
-numpy==1.16.4
+numpy==1.22.0
 opt-einsum==3.1.0
 Pillow==6.2.1
 progressbar==2.5
